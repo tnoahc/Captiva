@@ -1,0 +1,64 @@
+@charset "utf-8";
+html { background-color: #FFFFFF; }
+body { margin: 0; padding: 20px 0 0 0; color: #000; font-family: 'Source Sans Pro', sans-serif; font-size: 100%; line-height: 1.4; font-weight: 400; }
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { padding: 0; margin: 0; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; padding-right: 15px; padding-left: 15px; font-weight: 300; }
+p { margin-top: 0; padding-right: 15px; padding-left: 15px; }
+a img { border: none; }
+a:link { color: #E31B23; text-decoration: underline; }
+a:visited { color: #6E6C64; text-decoration: underline; }
+a:hover, a:active, a:focus { text-decoration: none; }
+.container { min-width: 321px; max-width: 768px; background: #FFFFFF; margin: 0 auto; }
+header { padding: 10px 0; margin-bottom: 20px; position: relative; text-align: right; }
+header img { position: absolute; z-index: 9999; top: 0px; left: 0px; margin: 0 0 0 10px; display: none; }
+header h1 { font-size: 3em; display: block; margin-bottom: 0px; }
+header p { display: block; margin-bottom: 0px; }
+#red { border-top-width: 1px; border-top-style: solid; border-top-color: #000; background-color: #F33; }
+.sidebar1 { float: left; width: 180px; background: #EADCAE; padding-bottom: 10px; }
+.content { padding: 10px 0; width: 750px; float: left; margin: 10px; color: #FFF; background-color: #000; }
+aside { float: left; width: 180px; padding: 10px 0; }
+.content ul, .content ol { padding: 0 15px 15px 40px; }
+nav ul { list-style: none; position: relative; display: inline-table; /* [disabled]float: left;
+*/ }
+nav ul li { text-decoration: none; margin: 5px; /* [disabled]float: left;
+*/ background-color: #E31B23; width: 234px; height: 234px; overflow: hidden; position: relative; vertical-align: top; display: inline-block; }
+nav ul li h1 { display: block; color: #FFF; font-weight: 300; font-size: 2em; margin: 0; cursor: pointer; }
+nav ul li h2 { text-transform: uppercase; font-size: 1.2em; letter-spacing: 0.3em; display: block; margin: 0px; color: #FFF; background-color: #000; }
+nav ul li p { display: block; color: #FFF; font-weight: 400; font-size: 0.9em; margin: 15px 0 0 0; }
+nav ul li #link { visibility: hidden; display: none; }
+nav ul a:link, nav ul a:visited { padding: 5px 5px 5px 15px; display: block; text-decoration: none; color: #FFF; font-weight: 300; font-size: 2em; }
+nav ul a:hover, nav ul a:active, nav ul a:focus { color: #FFF; background-color: rgba(228,228,228,1); }
+nav ul li ul { display: none; }
+nav ul li:hover > ul { display: block; }
+nav ul li ul li { display: block; /* [disabled]width: 0px;
+*/ height: auto; margin: 0; background-color: rgba(255, 255, 255, 0.3); background-image: none; }
+nav ul li ul li a:link, nav ul li ul li a:visited { font-size: 1.1em; padding: 0 0 0 15px; color: #000; font-weight: 400; }
+nav ul li ul li a:hover, nav ul li ul li a:active, nav ul li ul li a:focus { color: #FFF; }
+.container nav ul .black ul li ul li a:link, .container nav ul .black ul li ul li a:visited { font-size: 12px; padding-top: 5px; border-top-width: 1px; border-top-style: solid; border-top-color: #000; }
+nav ul .black { background-color: #000; color: #FFF; }
+nav ul .black ul li a:link, nav ul .black ul li a:visited { background-color: rgba(228,228,228,1); }
+nav ul .black ul li a:hover, nav ul .black ul li a:active, nav ul .black ul li a:focus { background-color: rgba(102,102,102,1); color: rgba(255,255,255,1); }
+nav ul .black.mc div a:link, nav ul .black.mc div a:visited { padding: 0; display: inherit; font-weight: normal; font-size: inherit; }
+nav ul .black.mc div a:hover, nav ul .black.mc div a:active, nav ul .black.mc div a:focus { background-color: rgba(227,27,35,1); color: rgba(255,255,255,1); }
+nav ul .black.mc div p em { font-size: 11px; color: rgba(204,204,204,1); padding: 0px; margin: 0px; }
+nav ul .black.mc div h2 { cursor: pointer; }
+nav ul .white { background-color: #FFF; color: #000; }
+nav ul .white a:link, nav ul .white a:visited { color: #E31B23; }
+nav ul .white a:hover, nav ul .white a:active, nav ul .white a:focus { color: #000000; }
+nav ul .s6 p { margin: 0px; font-size: .4em; padding: 0; font-weight: 400; }
+.black a p { margin: 0px; font-size: 0.5em; padding: 0; font-weight: 400; }
+ul .slideshow { position: relative; }
+/* ~~ The footer ~~ */
+footer { padding: 10px 0; position: relative;/* this gives IE6 hasLayout to properly clear */ clear: both; font-family: Verdana, Geneva, sans-serif; font-size: 10px; color: #999; }
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt { float: right; margin-left: 8px; }
+.fltlft { float: left; margin-right: 8px; }
+.clearfloat { clear: both; height: 0; font-size: 1px; line-height: 0px; }
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure { display: block; }
+.pics { height: 234px; width: 100%; padding: 0; margin: 0; background-color: #F3F3F3; }
+.pics img { top: 0; left: 0 }
+.pointer { position: absolute; color: #FFF; font-weight: bold; z-index: 999999; top: 0px; left: 0px; }
+.pointer a:link, .pointer a:visited { font-size: 0.9em; font-weight: 400; text-transform: uppercase; background-color: #000000; letter-spacing: 0.2em; }
+.pointer a:hover, .pointer a:active, .pointer a:focus { background-color: #E31B23; }

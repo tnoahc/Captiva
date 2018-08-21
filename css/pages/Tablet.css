@@ -1,0 +1,302 @@
+@charset "utf-8";
+html {
+	background-color: #FFF;
+}
+body {
+	margin: 0;
+	padding: 20px 0 0 0;
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 95%;
+	line-height: 1.4;
+	font-weight: 400;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+a img {
+	border: none;
+}
+a:link {
+	color: #E31B23;
+	text-decoration: underline;
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+.container {
+	background: #FFFFFF;
+	margin: 0 auto;
+	width: 100%;
+}
+header {
+	padding: 10px 0;
+	margin-bottom: 20px;
+	position: relative;
+	text-align: right;
+}
+.head { /*
+	[disabled]overflow: hidden;
+*/
+}
+header img {
+	position: absolute;
+	z-index: 9999;
+	top: 0px;
+	left: 0px;
+	margin: 0 0 0 10px;
+}
+header pre {
+	display: block;
+	margin: 0px;
+	padding-right: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+header h1 {
+	font-size: 3.5em;
+	display: block;
+	margin-bottom: 0px;
+}
+header p {
+	display: block;
+	margin-bottom: 0px;
+}
+.red {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+	background-color: #999999;
+}
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	float: left;
+	margin: 10px 0;
+	color: #FFF;
+	background-color: #000;
+	width: 100%;
+}
+.content blockquote {
+	display: block;
+	border: thin solid #E31B23;
+	padding: 10px;
+	text-align: center;
+}
+aside {
+	float: left;
+	width: 180px;
+	padding: 10px 0;
+}
+.content ul, .content ol {
+	padding: 0 15px 15px 40px;
+}
+nav ul {
+	list-style: none;
+	position: relative;
+	float: left;
+	/* [disabled]width: 768px;
+*/
+}
+nav ul li {
+	text-decoration: none;
+	margin: 0 5px;
+	float: left;
+	background-color: #E31B23;
+	width: 234px;
+	height: 234px;
+	overflow: hidden;
+	position: relative;
+}
+nav ul li h1 {
+	display: block;
+	color: #FFF;
+	font-weight: 300;
+	font-size: 2em;
+	margin: 0;
+	cursor: pointer;
+}
+nav ul li h2 {
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: 0.3em;
+	display: block;
+	margin: 0px;
+	color: #FFF;
+	background-color: #000;
+}
+nav ul li p {
+	display: block;
+	color: #FFF;
+	font-weight: 400;
+	font-size: 0.9em;
+	margin: 15px 0 0 0;
+}
+nav ul a:link, nav ul a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 300;
+	font-size: 2em;
+}
+nav ul a:hover, nav ul a:active, nav ul a:focus {
+	color: #FFF;
+}
+nav ul li ul {
+	display: none;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul li ul li {
+	display: block;
+	/* [disabled]width: 0px;
+*/
+	height: auto;
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	font-size: 14px;
+}
+nav ul li ul li a:link, nav ul li ul li a:visited {
+	font-size: 1em;
+	padding: 0 0 0 15px;
+	color: #000;
+	font-weight: 400;
+}
+nav ul li ul li a:hover, nav ul li ul li a:active, nav ul li ul li a:focus {
+	color: #FFF;
+}
+.container nav ul .black ul li ul li a:link, .container nav ul .black ul li ul li a:visited {
+	font-size: 12px;
+	padding-top: 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+nav ul .black {
+	background-color: #000;
+	color: #FFF;
+}
+nav ul .s6 p {
+	margin: 0px;
+	font-size: .4em;
+	padding: 0;
+	font-weight: 400;
+}
+.black a p {
+	margin: 0px;
+	font-size: 0.5em;
+	padding: 0;
+	font-weight: 400;
+}
+ul .slideshow {
+	position: relative;
+}
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #999;
+}
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+.pics {
+	height: 234px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #F3F3F3;
+}
+.pics img {
+	top: 0;
+	left: 0
+}
+.pointer {
+	position: absolute;
+	color: #FFF;
+	font-weight: bold;
+	z-index: 1000;
+	/* [disabled]padding: 0 20px;
+*/
+	/* [disabled]text-shadow: 1px 1px 2px #000;
+*/
+	right: 0px;
+	bottom: 0px;
+}
+.pointer a:link, .pointer a:visited {
+	font-size: 0.9em;
+	font-weight: 400;
+	text-transform: uppercase;
+	background-color: #E31B23;
+	letter-spacing: 0.2em;
+}
+.pointer a:hover, .pointer a:active, .pointer a:focus {
+	background-color: #000;
+}
+.hdr {
+	cursor: hand;
+	cursor: pointer;
+}
+.openhrd {
+	/* [disabled]color: #000;
+*/
+	background-color: #E31B23;
+}
+.cnt {
+	background-color: #191919;
+}
+.content h4 {
+	color: #000000;
+	display: block;
+	background-color: #FFF;
+	font-weight: 400;
+}
+.profile_img {
+	display: none;
+	clear: both;
+	float: right;
+}

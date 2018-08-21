@@ -1,0 +1,10 @@
+/* Phone */
+@import url("phone.css") only screen and (max-width:320px);
+/* Tablet */
+@import url("tablet.css") only screen and (min-width:321px) and (max-width:768px);
+/* Desktop */
+@import url("desktop.css") only screen and (min-width:769px);
+img { max-width: 100%; height: auto; width: auto\9; /* ie8 */ }
+.video embed, .video object, .video iframe { width: 100%; height: auto; }
+header pre { display: block; margin: 0px; padding-right: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 10px; }
+#fb-root { display: none; }
